@@ -1,0 +1,297 @@
+# Component > Buttons
+
+#### Variable
+
+- buttons.css
+
+```css
+:root {
+  --bs-primary: #2f5c8f;
+  --bs-secondary: #66737f;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #e7ecf2;
+  --bs-dark: #292e33;
+  --bs-complement: #d85c27;
+  --bs-primary-hover: #3b7ca8;
+  --bs-secondary-hover: #7a8a96;
+  --bs-success-hover: #1e9e5e;
+  --bs-info-hover: #0dbfd6;
+  --bs-warning-hover: #fccc6b;
+  --bs-danger-hover: #f43d58;
+  --bs-light-hover: #ced2d6;
+  --bs-dark-hover: #3e454c;
+  --bs-complement-hover: #ef602e;
+}
+```
+
+#### Element
+
+- buttons.css
+
+```css
+.btn {
+  padding: 7px 19px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out,
+    border-color 0.2s ease-out;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 6px;
+}
+
+.btn-lg {
+  font-size: 20px;
+  padding: 9px 24px;
+  border-radius: 10px;
+}
+```
+
+#### Modifier
+
+- buttons.css
+
+```css
+/* Button Primary */
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+  color: #fff;
+}
+
+/* Button Secondary */
+
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: var(--bs-secondary-hover);
+  border-color: var(--bs-secondary-hover);
+  color: #fff;
+}
+
+/* Button Complement */
+
+.btn-complement {
+  background-color: var(--bs-complement);
+  border-color: var(--bs-complement);
+  color: #fff;
+}
+.btn-complement:hover {
+  background-color: var(--bs-complement-hover);
+  border-color: var(--bs-complement-hover);
+  color: #fff;
+}
+
+/* Button Success */
+
+.btn-success {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+  color: #fff;
+}
+.btn-success:hover {
+  background-color: var(--bs-success-hover);
+  border-color: var(--bs-success-hover);
+  color: #fff;
+}
+
+/* Button Danger */
+
+.btn-danger {
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+  color: #fff;
+}
+.btn-danger:hover {
+  background-color: var(--bs-danger-hover);
+  border-color: var(--bs-danger-hover);
+  color: #fff;
+}
+
+/* Button Warning */
+
+.btn-warning {
+  background-color: var(--bs-warning);
+  border-color: var(--bs-warning);
+  color: #000;
+}
+.btn-warning:hover {
+  background-color: var(--bs-warning-hover);
+  border-color: var(--bs-warning-hover);
+  color: #000;
+}
+
+/* Button Info */
+
+.btn-info {
+  background-color: var(--bs-info);
+  border-color: var(--bs-info);
+  color: #000;
+}
+.btn-info:hover {
+  background-color: var(--bs-info-hover);
+  border-color: var(--bs-info-hover);
+  color: #000;
+}
+
+/* Button Light */
+
+.btn-light {
+  background-color: var(--bs-light);
+  border-color: var(--bs-light);
+  color: #000;
+}
+.btn-light:hover {
+  background-color: var(--bs-light-hover);
+  border-color: var(--bs-light-hover);
+  color: #000;
+}
+
+/* Button Dark */
+
+.btn-dark {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-dark);
+  color: #fff;
+}
+.btn-dark:hover {
+  background-color: var(--bs-dark-hover);
+  border-color: var(--bs-dark-hover);
+  color: #fff;
+}
+
+/* Button outline primary */
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+/* Button outline secondary */
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border-color: var(--bs-secondary);
+  color: var(--bs-secondary);
+}
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+
+/* Button outline complement */
+
+.btn-outline-complement {
+  background-color: transparent;
+  border-color: var(--bs-complement);
+  color: var(--bs-complement);
+}
+.btn-outline-complement:hover {
+  color: #fff;
+  background-color: var(--bs-complement);
+  border-color: var(--bs-complement);
+}
+
+/* Button outline success */
+
+.btn-outline-success {
+  background-color: transparent;
+  border-color: var(--bs-success);
+  color: var(--bs-success);
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+}
+
+/* Button outline danger */
+
+.btn-outline-danger {
+  background-color: transparent;
+  border-color: var(--bs-danger);
+  color: var(--bs-danger);
+}
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+}
+
+/* Button outline warning */
+
+.btn-outline-warning {
+  background-color: transparent;
+  border-color: var(--bs-warning);
+  color: var(--bs-warning);
+}
+.btn-outline-warning:hover {
+  color: #000;
+  background-color: var(--bs-warning);
+  border-color: var(--bs-warning);
+}
+
+/* Button outline info */
+
+.btn-outline-info {
+  background-color: transparent;
+  border-color: var(--bs-info);
+  color: var(--bs-info);
+}
+.btn-outline-info:hover {
+  color: #000;
+  background-color: var(--bs-info);
+  border-color: var(--bs-info);
+}
+
+/* Button outline light */
+
+.btn-outline-light {
+  background-color: transparent;
+  border-color: var(--bs-light);
+  color: var(--bs-light);
+}
+.btn-outline-light:hover {
+  color: #000;
+  background-color: var(--bs-light);
+  border-color: var(--bs-light);
+}
+
+/* Button outline dark */
+
+.btn-outline-dark {
+  background-color: transparent;
+  border-color: var(--bs-dark);
+  color: var(--bs-dark);
+}
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-dark);
+}
+```
